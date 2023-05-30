@@ -1,0 +1,21 @@
+<form id="sgform-create-event" method="post" [formGroup]="formCreateEvent">
+    <div class="sgfield">
+        <label for="event-title">Event Title:</label>
+        <input type="text" formControlName="event-title" id="event-title">
+    </div>
+    <div class="sgfield">
+        <label for="product-name">Product Name:</label>
+        <input type="text" formControlName="product-name" id="product-name">
+    </div>
+    <div class="sgfield">
+        <label for="start-date">Start Date:</label>
+        <input type="text" formControlName="start-date" id="start-date">
+    </div>
+    <div class="sgfield">
+        <label for="end-date">End Date:</label>
+        <input type="text" formControlName="end-date" id="end-date">
+    </div>
+    <div class="sgform-footer">
+        <input type="submit" value="submit" (submit)="submitCreateEvent($event)">
+    </div>
+</form>
